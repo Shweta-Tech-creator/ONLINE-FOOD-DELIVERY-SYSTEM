@@ -82,6 +82,87 @@ mutation {
 4. **Order status updates**: Ability to transition orders through their lifecycle.
 5. **Customer order history**: Efficiently retrieve all past orders for a specific customer.
 6. **Restaurant rating calculation**: Dynamics calculation of average ratings from reviews.
+## 📸 Screenshots
+
+### 1. Neo4j Aura Instance
+![Neo4j Aura Instance](image-link-placeholder)
+
+**Description:**
+This screenshot shows the **Neo4j Aura database instance running**. The instance contains nodes and relationships for the Online Food Delivery System and is ready to execute graph queries.
+
+---
+
+### 2. Complete Graph View
+**Query:**
+```cypher
+MATCH p=()-[]->() RETURN p LIMIT 25;
+```
+![Complete Graph View](image-link-placeholder)
+
+**Description:**
+This query displays the **complete graph structure**, showing all nodes (Customer, Restaurant, MenuItem, Order) and their relationships in the system.
+
+---
+
+### 3. Order and Restaurant Relationship
+**Query:**
+```cypher
+MATCH p=()-[:AT_RESTAURANT]->() RETURN p LIMIT 25;
+```
+![Order and Restaurant Relationship](image-link-placeholder)
+
+**Description:**
+This query shows the **AT_RESTAURANT relationship**, which connects an **Order** to the **Restaurant** where the order was placed.
+
+---
+
+### 4. Order and Menu Item Relationship
+**Query:**
+```cypher
+MATCH p=()-[:CONTAINS]->() RETURN p LIMIT 25;
+```
+![Order and Menu Item Relationship](image-link-placeholder)
+
+**Description:**
+This query displays the **CONTAINS relationship**, showing which **Menu Items are included in an Order**.
+
+---
+
+### 5. Restaurant and Menu Item Relationship
+**Query:**
+```cypher
+MATCH p=()-[:HAS_MENU_ITEM]->() RETURN p LIMIT 25;
+```
+![Restaurant and Menu Item Relationship](image-link-placeholder)
+
+**Description:**
+This query shows the **HAS_MENU_ITEM relationship**, representing which **menu items belong to a restaurant**.
+
+---
+
+### 6. Customer Order Placement
+**Query:**
+```cypher
+MATCH p=()-[:PLACED]->() RETURN p LIMIT 25;
+```
+![Customer Order Placement](image-link-placeholder)
+
+**Description:**
+This query shows the **PLACED relationship**, where a **Customer places an Order**.
+
+---
+
+### 7. Customer Review Relationship
+**Query:**
+```cypher
+MATCH p=()-[:REVIEWED]->() RETURN p LIMIT 25;
+```
+![Customer Review Relationship](image-link-placeholder)
+
+**Description:**
+This query shows the **REVIEWED relationship**, where a **Customer gives a review to a Restaurant**, which helps calculate restaurant ratings.
+
+---
 
 ## ⚙️ Setup & Installation
 
