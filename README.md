@@ -85,7 +85,7 @@ mutation {
 ## 📸 Screenshots
 
 ### 1. Neo4j Aura Instance
-![Neo4j Aura Instance](/Users/swetapopatkadam/Desktop/cloud_ss/s1.png)
+![Neo4j Aura Instance](./images/s1.png)
 
 **Description:**
 This screenshot shows the **Neo4j Aura database instance running**. The instance contains nodes and relationships for the Online Food Delivery System and is ready to execute graph queries.
@@ -97,7 +97,7 @@ This screenshot shows the **Neo4j Aura database instance running**. The instance
 ```cypher
 MATCH p=()-[]->() RETURN p LIMIT 25;
 ```
-![Complete Graph View](image-link-placeholder)
+![Complete Graph View](./images/s2.png)
 
 **Description:**
 This query displays the **complete graph structure**, showing all nodes (Customer, Restaurant, MenuItem, Order) and their relationships in the system.
@@ -109,7 +109,7 @@ This query displays the **complete graph structure**, showing all nodes (Custome
 ```cypher
 MATCH p=()-[:AT_RESTAURANT]->() RETURN p LIMIT 25;
 ```
-![Order and Restaurant Relationship](image-link-placeholder)
+![Order and Restaurant Relationship](./images/s3.png)
 
 **Description:**
 This query shows the **AT_RESTAURANT relationship**, which connects an **Order** to the **Restaurant** where the order was placed.
@@ -121,7 +121,7 @@ This query shows the **AT_RESTAURANT relationship**, which connects an **Order**
 ```cypher
 MATCH p=()-[:CONTAINS]->() RETURN p LIMIT 25;
 ```
-![Order and Menu Item Relationship](image-link-placeholder)
+![Order and Menu Item Relationship](./images/s4.png)
 
 **Description:**
 This query displays the **CONTAINS relationship**, showing which **Menu Items are included in an Order**.
@@ -133,7 +133,7 @@ This query displays the **CONTAINS relationship**, showing which **Menu Items ar
 ```cypher
 MATCH p=()-[:HAS_MENU_ITEM]->() RETURN p LIMIT 25;
 ```
-![Restaurant and Menu Item Relationship](image-link-placeholder)
+![Restaurant and Menu Item Relationship](./images/s5.png)
 
 **Description:**
 This query shows the **HAS_MENU_ITEM relationship**, representing which **menu items belong to a restaurant**.
@@ -145,7 +145,7 @@ This query shows the **HAS_MENU_ITEM relationship**, representing which **menu i
 ```cypher
 MATCH p=()-[:PLACED]->() RETURN p LIMIT 25;
 ```
-![Customer Order Placement](image-link-placeholder)
+![Customer Order Placement](./images/s6.png)
 
 **Description:**
 This query shows the **PLACED relationship**, where a **Customer places an Order**.
@@ -157,7 +157,7 @@ This query shows the **PLACED relationship**, where a **Customer places an Order
 ```cypher
 MATCH p=()-[:REVIEWED]->() RETURN p LIMIT 25;
 ```
-![Customer Review Relationship](image-link-placeholder)
+![Customer Review Relationship](./images/s7.png)
 
 **Description:**
 This query shows the **REVIEWED relationship**, where a **Customer gives a review to a Restaurant**, which helps calculate restaurant ratings.
