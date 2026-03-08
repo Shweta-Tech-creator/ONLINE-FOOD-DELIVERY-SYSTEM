@@ -85,7 +85,7 @@ mutation {
 ## 📸 Screenshots
 
 ### 1. Neo4j Aura Instance
-![Neo4j Aura Instance](image-link-placeholder)
+![Neo4j Aura Instance](/Users/swetapopatkadam/Desktop/cloud_ss/s1.png)
 
 **Description:**
 This screenshot shows the **Neo4j Aura database instance running**. The instance contains nodes and relationships for the Online Food Delivery System and is ready to execute graph queries.
